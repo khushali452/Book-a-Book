@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import women from '../img/women.jpg'
+import women from '../img/women.png'
+import AnimatedShapes from './AnimatedShapes'
 
 const Container=styled.div`
 height: calc(100vh - 50px);
@@ -68,7 +69,8 @@ const ContactText=styled.span`
 color: gray;
 `
 const Image = styled.img`
-    width: 100%;
+    width: 160%;
+    height: 100%;
 `
 
 
@@ -76,22 +78,23 @@ const Intro = () => {
   return (
     <Container>
         <Left>
-            <Title>Adventures on creative age</Title>
+            <Title>Your searches end here !</Title>
             <Desc>
-          We believe that designing products and services in close partnership
-          with our clients is the only way to have a real impact on their
-          business.
+            Books are a uniquely portable magic. And we port this magic on click at your doorsteps.
+            We intend to make reading books a hassle free, cost effective and pleasurable experience.
+            
         </Desc>
         <Info>
-          <Button>START A PROJECT </Button>
+          <Button>GET MEMBERSHIP </Button>
           <Contact>
-            <Phone>CALL US (091) 111-12111</Phone>
+            <Phone>CALL US (091) 123-456789</Phone>
             <ContactText>For any question or concern</ContactText>
           </Contact>
         </Info>
 
         </Left>
         <Right><Image src={women}></Image></Right>
+        <AnimatedShapes/>
     </Container>
   )
 }

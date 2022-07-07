@@ -43,7 +43,7 @@ const Button = styled.button`
 const Navbar = () => {
   return (
     <Container><Wrapper>
-        <Left><Logo> Agency</Logo>
+        <Left><Logo> Book-a-Book</Logo>
         <Menu>
             <MenuItem>Home </MenuItem>
             <MenuItem>Features</MenuItem>
