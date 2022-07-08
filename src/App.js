@@ -1,12 +1,14 @@
 import React from 'react';
 import styled , { css } from 'styled-components';
+import Features from './components/Features';
 import Intro from './components/Intro';
 import Navbar from './components/Navbar';
+import Service from './components/Service';
 
 const Container = styled.div`
     height: 100vh;
     overflow: hidden;
-    
+    position: relative;
 `
 const Shape = css`
   width: 100%;
@@ -23,13 +25,28 @@ const IntoShape = styled.div`
   background-color: crimson;
 `;
 
+const FeatureShape = styled.div`
+  ${Shape}
+  clip-path: polygon(0 0, 60% 0%, 25% 100%, 0% 100%);
+  background-color: pink;
+`;
+
 const App = () => {
   return (
+    <>
     <Container>
       <Navbar/>
       <Intro/>
       <IntoShape />
       </Container>
+      <Container>
+        <Features />
+        <FeatureShape/>
+      </Container>
+      <Container>
+        <Service />
+      </Container>
+      </>
   )
 };
 
