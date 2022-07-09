@@ -41,7 +41,7 @@ const PriceShape = styled.div`
 
 const ContactShape = styled.div`
   ${Shape}
-  clip-path: polygon(60% 0, 100% 0%, 100% 100%, 40% 100%);
+  clip-path: polygon(60% 0, 100% 0%, 100% 100%, 0% 100%);
   background-color: pink;
 `;
 
